@@ -1,0 +1,23 @@
+.start-warp {
+  box-sizing: border-box;
+  padding: 25rpx;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.start-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+.start-text {
+  color: #18262a;
+  font-size: 20px;
+}
