@@ -3,7 +3,7 @@
  * @Author: LiuJia
  * @LastEditors: LiuJia
  * @Date: 2019-03-18 19:28:49
- * @LastEditTime: 2019-03-18 20:01:39
+ * @LastEditTime: 2019-03-18 20:23:20
  */
 
 const config = require('./config.js'); //引入config.js
@@ -132,7 +132,6 @@ const phoneReg = (phone = required()) => {
 const back = (num, time) => {
     const _num = num || 1;
     const _time = time || 0;
-
     setTimeout(function () {
         wx.navigateBack({
             delta: _num,
@@ -217,7 +216,6 @@ const toast = (title = required(), time, icon) => {
             },
         });
     });
-
     return promise;
 };
 
@@ -231,6 +229,6 @@ module.exports = {
     back: back, //返回上一页
     numFixed: numFixed, //保留数字小数点后N位
     showModal: showModal, //模态弹窗
-    showLoading: showLoading,   //显示加载遮罩层
-    toast: toast,   //出现提示
+    showLoading: showLoading, //显示加载遮罩层
+    toast: toast, //出现提示
 };
